@@ -74,28 +74,29 @@ pip install -r requirements.txt
 
 ---
 
- Training
- ** 3.1 Optimizer and Loss
+ ## Training
+ ``` 3.1 Optimizer and Loss
  
 * Optimizer: Adam
 * Learning Rate: 0.0001
 * Loss Function: CrossEntropyLoss
-
- ** 3.2 Metrics Tracked
+```
+ ```** 3.2 Metrics Tracked
  
 * Training Loss and Validation Loss
 * Accuracy
 * Precision, Recall, and F1-score (both macro and weighted)
-
- ** 3.3 Training Summary
+```
+ ```** 3.3 Training Summary
  
 * Epochs: 50
 * Batch Size: 16
-
- ** 3.4 Resource Usage
+```
+ ```** 3.4 Resource Usage
  
 * CPU Memory Used
 * Training Time: ~95.0 minutes (varies by hardware)
+```
 ________________________________________
 
 Train on your own dataset:
