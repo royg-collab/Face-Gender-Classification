@@ -170,6 +170,18 @@ Task_A/
 
 ---
 
+## Conclusion:
+This project successfully demonstrates the design and implementation of a lightweight yet powerful deep learning model for face-based gender classification using MobileNetV3-Small enhanced with Squeeze-and-Excitation (SE) attention.
+By combining MobileNetV3’s efficiency with SE’s adaptive feature selection capabilities, the model achieves high accuracy (92%) while maintaining computational efficiency, making it suitable for deployment on mobile and edge devices.
+Key accomplishments include:
+*	Accurate classification with clear performance metrics (Precision, Recall, F1-Score)
+*	Visual interpretability through Grad-CAM heatmaps
+*	Efficient training pipeline with resource usage tracking
+*	Clean dataset integration and evaluation-ready architecture
+The project also adheres to all submission requirements, including test script support, pretrained weights, and structured reporting. This solution offers a solid foundation for real-world face classification tasks and can be extended to age detection, emotion recognition, or multi-label facial analysis with minimal modifications.
+In essence, this project balances accuracy, speed, and explainability—delivering a practical and deployable AI solution for facial classification.
+________________________________________
+
 ##  Author
 
 \[Gargi Roy]
