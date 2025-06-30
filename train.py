@@ -15,7 +15,7 @@ class_names = train_ds.classes
 num_classes = len(class_names)
 print("Classes:", class_names)
 
-#Loss, Optimizer
+# Loss, Optimizer
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=1e-4)
 
@@ -40,7 +40,7 @@ for epoch in range(num_epochs):
         cnt += len(labels)
     train_loss, train_acc = tl/len(train_loader), ta/cnt
 
-    # 🧪 Validation
+    # Validation
     model.eval()
     vl, va, vc = 0,0,0
     with torch.no_grad():
