@@ -178,7 +178,9 @@ Key accomplishments include:
 *	Visual interpretability through Grad-CAM heatmaps
 *	Efficient training pipeline with resource usage tracking
 *	Clean dataset integration and evaluation-ready architecture
+  
 The project also adheres to all submission requirements, including test script support, pretrained weights, and structured reporting. This solution offers a solid foundation for real-world face classification tasks and can be extended to age detection, emotion recognition, or multi-label facial analysis with minimal modifications.
+
 In essence, this project balances accuracy, speed, and explainability—delivering a practical and deployable AI solution for facial classification.
 ________________________________________
 
