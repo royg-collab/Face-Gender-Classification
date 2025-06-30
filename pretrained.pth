@@ -1,0 +1,2 @@
+# pretrained_pth
+torch.save(model.state_dict(), 'mobilenetv3_se_face_recognition.pth')
