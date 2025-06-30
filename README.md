@@ -68,7 +68,7 @@ Train on your own dataset:
 python train.py \
     --train_path /path/to/train \
     --val_path /path/to/val \
-    --epochs 10 \
+    --epochs 50 \
     --batch_size 16 \
     --save_model pretrained.pth
 ```
