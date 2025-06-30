@@ -1,6 +1,6 @@
 # Face Gender Classification with MobileNetV3-Small + SE Attention
 
-A lightweight, accurate deep learning model for gender classification using facial images. This project combines **MobileNetV3-Small** with **Squeeze-and-Excitation (SE) Attention** to enhance feature extraction while maintaining efficiency.
+This project aims to build a lightweight and accurate deep learning model for gender classification from facial images using the MobileNetV3-Small architecture enhanced with Squeeze-and-Excitation (SE) attention. The model is trained and evaluated on a dataset organized into gender-based subfolders ("male" and "female").
 
 ---
 
@@ -42,11 +42,25 @@ A lightweight, accurate deep learning model for gender classification using faci
     accuracy                           0.92       422
    macro avg       0.91      0.83      0.86       422
 weighted avg       0.92      0.92      0.92       422
+
 ```
 
 ### Accuracy:
 
 *  92% overall accuracy on validation set
+
+### Confusion Matrix:
+Visualized using seaborn to show true positives, false positives.
+![image](https://github.com/user-attachments/assets/ed220757-5b05-4bad-833f-1c31e7780d53)
+
+### Training vs Validation plot (loss and accuracy):
+Plot curves against Training and Validation output to visualize loss and accuracy.
+![image](https://github.com/user-attachments/assets/74bd2a09-4aa7-466b-b2c7-72a35e43d096)
+
+### Grad-CAM Visualization:
+Grad-CAM heatmaps were used to visualize where the model focuses when predicting gender from a face. Results showed attention around eyes, nose, and jawline.
+![image](https://github.com/user-attachments/assets/73337c76-afa6-48ad-926b-41072d20ea96)
+
 
 ---
 
@@ -62,6 +76,23 @@ pip install -r requirements.txt
 
 ##  Training
 
+Training Details
+3.1 Optimizer and Loss
+•	Optimizer: Adam
+•	Learning Rate: 0.0001
+•	Loss Function: CrossEntropyLoss
+3.2 Metrics Tracked
+•	Training and Validation Loss
+•	Accuracy
+•	Precision, Recall, F1-score (macro and weighted)
+3.3 Training Summary
+•	Epochs: 50
+•	Batch Size: 16
+3.4 Resource Usage
+•	CPU Memory Used
+•	Training Time: ~95.0 mins (varies by hardware)
+________________________________________
+
 Train on your own dataset:
 
 ```bash
@@ -75,8 +106,11 @@ python train.py \
 
 ---
 
-##  Testing
+##  Testing:
 
+A separate test.py script is provided that:
+•	Accepts a test dataset path (same folder structure)
+•	Loads the pretrained model
 Evaluate the model on new test data:
 
 ```bash
@@ -106,22 +140,27 @@ The project includes tools to generate Grad-CAM attention maps for model interpr
 Must follow ImageFolder structure:
 
 ```
-Dataset/
-├── class_0/  # e.g., female
-│   └── img1.jpg
-├── class_1/  # e.g., male
-│   └── img2.jpg
+Task_A/
+├── train/
+│   ├── female/
+│   └── male/
+├── val/
+    ├── female/
+    └── male/
 ```
+•	Total Classes: 2
+•	Image Size: Resized to 224x224
+•	Normalization: Standard ImageNet mean and std
 
 ---
 
 ##  Submission Checklist
 
-* [x] Training and validation results ✅
-* [x] Confusion matrix and Grad-CAM ✅
-* [x] Test script ✅
-* [x] Pretrained weights ✅
-* [x] GitHub-ready project structure ✅
+*  Training and validation results ✅
+*  Confusion matrix and Grad-CAM ✅
+*  Test script ✅
+*  Pretrained weights ✅
+*  GitHub-ready project structure ✅
 
 ---
 
@@ -135,4 +174,4 @@ MIT License
 
 ---
 
-For questions, suggestions, or issues, please contact \[Your Email / GitHub Issue Tracker].
+For questions, suggestions, or issues, please contact \[chattg10@gmail.com].
