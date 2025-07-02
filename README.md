@@ -116,8 +116,8 @@ python train.py \
 ##  Testing:
 
 A separate test.py script is provided that:
-•	Accepts a test dataset path (same folder structure)
-•	Loads the pretrained model
+*	Accepts a test dataset path (same folder structure)
+*	Loads the pretrained model
 Evaluate the model on new test data:
 
 ```bash
@@ -140,7 +140,7 @@ It will output:
 
 The project includes tools to generate Grad-CAM attention maps for model interpretability.
 A separate util.py is given to plots and Grad_CAM attention.
----
+
 
 ##  Dataset Format
 
