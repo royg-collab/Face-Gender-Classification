@@ -139,7 +139,7 @@ It will output:
 ##  Grad-CAM Visualizations
 
 The project includes tools to generate Grad-CAM attention maps for model interpretability.
-A separate util.py is given to plots and Grad_CAM attention.
+A separate util.py script is given to plots and Grad_CAM attention.
 
 
 ##  Dataset Format
