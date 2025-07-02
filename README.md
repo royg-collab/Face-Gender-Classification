@@ -59,6 +59,7 @@ Plot curves against Training and Validation output to visualize loss and accurac
 
 ### Grad-CAM Visualization:
 Grad-CAM heatmaps were used to visualize where the model focuses when predicting gender from a face. Results showed attention around eyes, nose, and jawline.
+
 ![image](https://github.com/user-attachments/assets/73337c76-afa6-48ad-926b-41072d20ea96)
 
 
@@ -138,7 +139,7 @@ It will output:
 ##  Grad-CAM Visualizations
 
 The project includes tools to generate Grad-CAM attention maps for model interpretability.
-
+A separate util.py is given to plots and Grad_CAM attention.
 ---
 
 ##  Dataset Format
