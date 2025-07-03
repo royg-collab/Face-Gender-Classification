@@ -1,4 +1,4 @@
-# Face Gender Classification with MobileNetV3-Small + SE Attention
+# Task_A: Gender Classification with MobileNetV3-Small + SE Attention
 
 This project aims to build a lightweight and accurate deep learning model for gender classification from facial images using the MobileNetV3-Small architecture enhanced with Squeeze-and-Excitation (SE) attention. The model is trained and evaluated on a dataset organized into gender-based subfolders ("male" and "female").
 
