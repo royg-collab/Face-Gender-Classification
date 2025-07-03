@@ -63,3 +63,6 @@ for epoch in range(num_epochs):
 total_time = time.time() - start_time
 print(f"Total training time: {total_time/60:.1f} mins")
 print(f"Peak GPU memory: {torch.cuda.max_memory_allocated()/1024**3:.2f} GB")
+
+#pretrained path
+torch.save(model.state_dict(), 'mobilenetv3_se_face_recognition.pth')
