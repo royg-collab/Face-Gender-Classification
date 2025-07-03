@@ -22,7 +22,7 @@ This project aims to build a lightweight and accurate deep learning model for ge
 ├── train.py           # Training script
 ├── test.py            # Evaluation script accepting test folder path
 ├── utils.py           # Utility functions (Plots, Grad-CAM, etc.)
-├── pretrained.pth     # Saved model weights
+├── mobilenetv3_se_face_recognition.pth    # Saved model weights
 ├── requirements.txt   # All dependencies
 └── README.md          # This file
 ```
@@ -108,7 +108,7 @@ python train.py \
     --val_path /path/to/val \
     --epochs 50 \
     --batch_size 16 \
-    --save_model pretrained.pth
+    --save_model mobilenetv3_se_face_recognition.pth
 ```
 
 ---
@@ -122,7 +122,7 @@ Evaluate the model on new test data:
 
 ```bash
 python test.py \
-    --model_path pretrained.pth \
+    --model_path mobilenetv3_se_face_recognition.pth \
     --test_path /path/to/test
 ```
 
